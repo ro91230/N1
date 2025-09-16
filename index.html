@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICOTINE STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="NICOTINE STORE">
+                <div class="logo-text">
+                    <h1>NICOTINE STORE</h1>
+                </div>
+            </div>
+            <nav class="nav-links-container">
+                <div class="nav-links">
+                    <a href="#products">المنتجات</a>
+                    <a href="#categories">الفئات</a>
+                    <a href="#branches">فروعنا</a>
+                    <a href="#links">روابطنا</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon" id="cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>اكتشف عالم النيكوتين المتميز</h2>
+                <p>أجود المنتجات وأحدث الأجهزة بأفضل الأسعار مع خدمة توصيل مجانية و سريعة في كربلاء</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">تسوق الآن</a>
+                    <a href="#branches" class="btn btn-outline">اكتشف الفروع</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-title"><h2>فئات المنتجات</h2></div>
+            <div class="categories-grid">
+                <div class="category-card active" data-category="الكل"><i class="fas fa-th-large"></i><h3>الكل</h3></div>
+                <div class="category-card" data-category="سجائر الكترونية"><i class="fas fa-smoking"></i><h3>سجائر الكترونية</h3></div>
+                <div class="category-card" data-category="كارتلج"><i class="fas fa-sd-card"></i><h3>كارتلج</h3></div>
+                <div class="category-card" data-category="فيب"><i class="fas fa-wind"></i><h3>فيب</h3></div>
+                <div class="category-card" data-category="تانك و كويل"><i class="fas fa-cogs"></i><h3>تانك و كويل</h3></div>
+                <div class="category-card" data-category="جوس"><i class="fas fa-tint"></i><h3>جوس</h3></div>
+                <div class="category-card" data-category="دسبوسبل"><i class="fas fa-cube"></i><h3>دسبوسبل</h3></div>
+                <div class="category-card" data-category="ايكوز"><i class="fas fa-leaf"></i><h3>ايكوز</h3></div>
+                <div class="category-card" data-category="اكسسورارات"><i class="fas fa-tools"></i><h3>اكسسورارات</h3></div>
+                <div class="category-card" data-category="اخرى"><i class="fas fa-ellipsis-h"></i><h3>اخرى</h3></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="filter-controls" id="filter-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+                </div>
+                <div class="sort-container">
+                    <i class="fas fa-sort-amount-down"></i>
+                    <select id="price-sort">
+                        <option value="default">ترتيب حسب</option>
+                        <option value="low-to-high">السعر: من الأقل للأعلى</option>
+                        <option value="high-to-low">السعر: من الأعلى للأقل</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title"><h2>منتجاتنا</h2></div>
+            <div id="products-grid" class="products-grid">
+                <p class="loading-text">جاري تحميل المنتجات...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="branches" id="branches">
+        <div class="container">
+             <div class="section-title"><h2>فروعنا</h2></div>
+             <div class="branches-grid">
+                 <div class="branch-card"><h3>الفرع 1 - تقاطع حي الموضفين</h3><a href="#" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> فتح في الخرائط</a></div>
+                 <div class="branch-card"><h3>الفرع 2 - حي الحسين</h3><a href="#" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> فتح في الخرائط</a></div>
+                 <div class="branch-card"><h3>الفرع 3 - سيف سعد</h3><a href="#" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> فتح في الخرائط</a></div>
+                 <div class="branch-card"><h3>الفرع 4 - حي النقيب</h3><a href="#" target="_blank" class="map-link"><i class="fas fa-map-marker-alt"></i> فتح في الخرائط</a></div>
+             </div>
+        </div>
+    </section>
+    
+    <section class="links" id="links">
+        <div class="container">
+            <div class="section-title"><h2>تواصل معنا</h2></div>
+            <div class="links-grid">
+                <a href="https://www.instagram.com/nicotine.store/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+                <a href="https://m.facebook.com/nicotine.iq/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                <a href="https://api.whatsapp.com/send?phone=9647717307204" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i> <span>WhatsApp</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column"><h3>NICOTINE STORE</h3><p>متخصصون في توفير أجود منتجات النيكوتين والإكسسوارات ذات الجودة العالية بأسعار تنافسية وخدمة عملاء متميزة.</p></div>
+                <div class="footer-column"><h3>روابط سريعة</h3><ul class="footer-links"><li><a href="#products"><i class="fas fa-chevron-left"></i> المنتجات</a></li><li><a href="#categories"><i class="fas fa-chevron-left"></i> الفئات</a></li><li><a href="#branches"><i class="fas fa-chevron-left"></i> فروعنا</a></li><li><a href="#links"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li></ul></div>
+                <div class="footer-column"><h3>معلومات التواصل</h3><ul class="footer-links"><li><a href="#"><i class="fas fa-phone"></i> 9647717307204</a></li><li><a href="#"><i class="fas fa-envelope"></i> nicotine.91230@gmail.com</a></li><li><a href="#"><i class="fas fa-map-marker-alt"></i> العراق، كربلاء</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 NICOTINE STORE. جميع الحقوق محفوظة</p></div>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal"><div class="modal-content"><div class="modal-header"><h2>سلة التسوق</h2><span class="close-button">&times;</span></div><div class="modal-body" id="cart-items"></div><div class="modal-footer"><div class="total-price" id="total-price">المجموع: 0 د.ع</div><button id="checkout-button" class="btn btn-primary">إتمام الطلب</button></div></div></div>
+    <div id="order-modal" class="modal"><div class="modal-content"><div class="modal-header"><h2>معلومات التوصيل</h2><span class="close-button">&times;</span></div><form id="order-form" class="modal-body"><div class="form-group"><label for="customer-name">الاسم الكامل:</label><input type="text" id="customer-name" required></div><div class="form-group"><label for="customer-phone">رقم الهاتف:</label><input type="tel" id="customer-phone" required></div><div class="form-group"><label for="customer-address">العنوان (المدينة - المنطقة):</label><input type="text" id="customer-address" required></div><div class="modal-footer"><button type="submit" class="btn btn-primary">إرسال الطلب عبر واتساب</button></div></form></div></div>
+    <div id="product-detail-modal" class="modal"><div class="modal-content" id="product-detail-content"></div></div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
